@@ -273,6 +273,6 @@ struct ViewDetails: View {
 }
 struct ViewDetails_Previews: PreviewProvider {
     static var previews: some View {
-        ViewDetails(card: laybackInaBauer) // Update to match your renamed variable
+        ViewDetails(card: biellmannSpin)
     }
 }
