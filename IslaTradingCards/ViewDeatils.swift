@@ -1,6 +1,6 @@
 import SwiftUI
 
-struct TradingCard {
+struct tradingCard {
     let imageName: String
     let elementName: String
     let type: String
@@ -10,7 +10,7 @@ struct TradingCard {
     let notes: String
 }
 
-let laybackInaBauer = TradingCard(
+let laybackInaBauer = tradingCard(
     imageName: "InaBauer",
     elementName: "Layback Ina Bauer",
     type: "MITF",
@@ -20,7 +20,7 @@ let laybackInaBauer = TradingCard(
     notes: "Extended 4th pos."
 )
 
-let beillmannSpin = TradingCard(
+let beillmannSpin = tradingCard(
     imageName: "BeillmannSpin",
     elementName: "BeillmannSpin",
     type: "Upright Spin",
@@ -31,9 +31,11 @@ let beillmannSpin = TradingCard(
 )
 
 struct ViewDeatils: View {
+    
+    let tradingCard: tradingCard
     var body: some View {
         ZStack {
-            Image("Snow")
+            Image(tradingCard.imageName)
                 .resizable()
                 .scaledToFill()
                 .edgesIgnoringSafeArea(.all)
@@ -187,5 +189,14 @@ struct ViewDeatils: View {
     }
 }
 #Preview {
-    ViewDeatils()
+    let beillmannSpin = tradingCard(
+        imageName: "BeillmannSpin",
+        elementName: "BeillmannSpin",
+        type: "Upright Spin",
+        baseValue: "2.9",
+        firstPerformer: "Denise Biellmann",
+        notablePerformer: "Irina Slutskaya",
+        notes: "Flexibility!!"
+    )
+    return ViewDeatils(tradingCard: beillmannSpin)
 }
