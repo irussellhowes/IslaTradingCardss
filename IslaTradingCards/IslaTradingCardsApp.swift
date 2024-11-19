@@ -11,7 +11,7 @@ import SwiftUI
 struct IslaTradingCardsApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            ViewDeatils()
         }
     }
 }
