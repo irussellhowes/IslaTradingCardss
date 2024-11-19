@@ -37,38 +37,72 @@ struct ViewDeatils: View {
                             relativeTo: .body
                         )
                     )
+                    .foregroundColor(.teal)
                     .padding(.bottom,10)
                 
                 HStack{
                     VStack(alignment: .center){
                         HStack{
                             Text("Type:")
-                                .font(.title3)
-                                .fontWeight(.bold)
-                                .foregroundStyle(.teal)
+                                .font(
+                                    .custom(
+                                        "Palatino",
+                                        size: 20.0,
+                                        relativeTo: .body
+                                    )
+                                )
+                                .foregroundColor(.teal)
                             Text("MITF")
-                                .font(.title3)
-                                .foregroundStyle(.teal)
+                                .font(
+                                    .custom(
+                                        "Palatino",
+                                        size: 20.0,
+                                        relativeTo: .body
+                                    )
+                                )
+                                .foregroundColor(.teal)
                         }
                         .padding(.bottom,10)
                         HStack{
                             Text("Base Value:")
-                                .font(.title3)
-                                .fontWeight(.bold)
-                                .foregroundStyle(.teal)
+                                .font(
+                                    .custom(
+                                        "Palatino",
+                                        size: 20.0,
+                                        relativeTo: .body
+                                    )
+                                )
+                                .foregroundColor(.teal)
                             Text("N/A")
-                                .font(.title3)
-                                .foregroundStyle(.teal)
+                                .font(
+                                    .custom(
+                                        "Palatino",
+                                        size: 20.0,
+                                        relativeTo: .body
+                                    )
+                                )
+                                .foregroundColor(.teal)
                         }
                         .padding(.bottom,10)
         
                             Text("First Performer:")
-                                .font(.title3)
-                                .fontWeight(.bold)
-                                .foregroundStyle(.teal)
+                            .font(
+                                .custom(
+                                    "Palatino",
+                                    size: 20.0,
+                                    relativeTo: .body
+                                )
+                            )
+                            .foregroundColor(.teal)
                             Text("Ina Bauer")
-                                .font(.title3)
-                                .foregroundStyle(.teal)
+                            .font(
+                                .custom(
+                                    "Palatino",
+                                    size: 20.0,
+                                    relativeTo: .body
+                                )
+                            )
+                            .foregroundColor(.teal)
                     }
                   
                     
@@ -76,23 +110,45 @@ struct ViewDeatils: View {
                         
                         
                             Text("Notable Performer:")
-                                .font(.title3)
-                                .fontWeight(.bold)
-                                .foregroundStyle(.teal)
+                            .font(
+                                .custom(
+                                    "Palatino",
+                                    size: 20.0,
+                                    relativeTo: .body
+                                )
+                            )
+                            .foregroundColor(.teal)
                             Text("Yuzuru Hanyu")
-                                .font(.title3)
-                                .foregroundStyle(.teal)
-                        
+                            .font(
+                                .custom(
+                                    "Palatino",
+                                    size: 20.0,
+                                    relativeTo: .body
+                                )
+                            )
+                            .foregroundColor(.teal)
                         .padding(.bottom,10)
                        
                         
                        
                             Text("Notes:")
-                                .font(.title3)
-                                .fontWeight(.bold)
-                                .foregroundStyle(.teal)
+                            .font(
+                                .custom(
+                                    "Palatino",
+                                    size: 20.0,
+                                    relativeTo: .body
+                                )
+                            )
+                            .foregroundColor(.teal)
                             Text("Extended 4th pos.")
-                                .font(.title3) .foregroundStyle(.teal)
+                            .font(
+                                .custom(
+                                    "Palatino",
+                                    size: 20.0,
+                                    relativeTo: .body
+                                )
+                            )
+                            .foregroundStyle(.teal)
                         
                     }
                 }
