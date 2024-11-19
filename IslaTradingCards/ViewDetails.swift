@@ -21,8 +21,8 @@ let laybackInaBauer = TradingCard(
 )
 
 let biellmannSpin = TradingCard(
-    imageName: "BeillmannSpin",
-    elementName: "BeillmannSpin",
+    imageName: "BiellmannSpin",
+    elementName: "BiellmannSpin",
     type: "Upright Spin",
     baseValue: "2.9",
     firstPerformer:  "Denise Biellmann",
@@ -32,11 +32,11 @@ let biellmannSpin = TradingCard(
 
 struct ViewDetails: View {
     
-    let TradingCard: TradingCard
+    let card: TradingCard
     var body: some View {
         ZStack {
             Image(
-                "snow"
+                "Snow"
             )
             .resizable()
             .scaledToFill()
@@ -73,7 +73,7 @@ struct ViewDetails: View {
                         )
                     
                     Image(
-                        TradingCard.imageName
+                        card.imageName
                     )
                     .resizable()
                     .scaledToFit()
@@ -86,7 +86,7 @@ struct ViewDetails: View {
                 )
                 
                 Text(
-                    TradingCard.elementName
+                    card.elementName
                 )
                 .font(
                     
@@ -123,7 +123,7 @@ struct ViewDetails: View {
                                 .teal
                             )
                             Text(
-                                TradingCard.type
+                                card.type
                             )
                             .font(
                                 .custom(
@@ -155,7 +155,7 @@ struct ViewDetails: View {
                                 .teal
                             )
                             Text(
-                                TradingCard.baseValue
+                                card.baseValue
                             )
                             .font(
                                 .custom(
@@ -187,7 +187,7 @@ struct ViewDetails: View {
                             .teal
                         )
                         Text(
-                            TradingCard.firstPerformer
+                            card.firstPerformer
                         )
                         .font(
                             .custom(
@@ -219,7 +219,7 @@ struct ViewDetails: View {
                             .teal
                         )
                         Text(
-                            TradingCard.notablePerformer
+                            card.notablePerformer
                         )
                         .font(
                             .custom(
@@ -252,7 +252,7 @@ struct ViewDetails: View {
                             .teal
                         )
                         Text(
-                            TradingCard.notes
+                            card.notes
                         )
                         .font(
                             .custom(
@@ -271,17 +271,8 @@ struct ViewDetails: View {
         }
     }
 }
-#Preview {
-    let biellmannSpin = TradingCard(
-        imageName: "BeillmannSpin",
-        elementName: "BeillmannSpin",
-        type: "Upright Spin",
-        baseValue: "2.9",
-        firstPerformer: "Denise Biellmann",
-        notablePerformer: "Irina Slutskaya",
-        notes: "Flexibility!!"
-    )
-    return ViewDetails(
-        tradingCard: biellmannSpin
-    )
+struct ViewDetails_Previews: PreviewProvider {
+    static var previews: some View {
+        ViewDetails(card: laybackInaBauer) // Update to match your renamed variable
+    }
 }
