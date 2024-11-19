@@ -29,10 +29,15 @@ struct ViewDeatils: View {
                 .frame(height:555)
                 
                 Text("Layback Ina Bauer")
-                    .font(.title)
-                    .fontWeight(.bold)
-                    .foregroundStyle(.teal)
-                    .padding(.bottom,30)
+                    .font(
+                        
+                        .custom(
+                            "Palatino",
+                            size: 36.0,
+                            relativeTo: .body
+                        )
+                    )
+                    .padding(.bottom,10)
                 
                 HStack{
                     VStack(alignment: .center){
